@@ -1,0 +1,51 @@
+:root {
+    --base: #000;
+    --primaryBackground: #121212;
+}
+
+/*UTILITY CLASSES*/
+
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: var(--base);
+    color: white;
+}
+
+.bg-gray {
+    background-color: var(--primaryBackground);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+/*margins*/
+
+.m-1 {
+    margin: 5px;
+}
+
+/*paddings*/
+.p-1 {
+    padding: 10px;
+}
