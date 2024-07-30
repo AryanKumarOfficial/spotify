@@ -62,9 +62,80 @@ section.right {
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 10px 0;
 }
 
 .footer a {
     text-decoration: none;
     color: gray;
+}
+
+.right {
+    margin: 16px 0;
+}
+
+.right .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+
+.right .header > * {
+    padding: 20px;
+}
+
+.right .header .nav img {
+    width: 20px;
+}
+
+.spotifyPlaylist {
+    padding: 16px;
+}
+
+.spotifyPlaylist .cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.spotifyPlaylist .cardContainer .card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    cursor: pointer;
+    position: relative;
+}
+
+.spotifyPlaylist .cardContainer .card .play {
+    background-color: #1fdf64;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    /*border: 2px solid black;*/
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40%;
+    right: 7.5%;
+    box-shadow: 2px 2px 8px gray;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.spotifyPlaylist .cardContainer .card > * {
+    padding-top: 10px;
+}
+
+.spotifyPlaylist .cardContainer .card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.spotifyPlaylist .cardContainer .card:hover .play {
+    opacity: 1;
+    bottom: 45%;
 }
